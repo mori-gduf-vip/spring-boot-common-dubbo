@@ -10,13 +10,15 @@
 	</parent>
 	<groupId>com.mori</groupId>
 	<artifactId>dubbo-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>common-dubbo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
+
 
 	<repositories>
 
@@ -73,19 +75,20 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 	<distributionManagement>
 		<repository>
-			<id>nexus-releases</id>
-			<name>corp nexus-releases</name>
-			<url>http://你的nexusIP:8081/nexus/content/repositories/releases/</url>
+			<id>rdc-releases</id>
+			<url>https://repo.rdc.aliyun.com/repository/111233-release-l1Ej3s/</url>
 		</repository>
 		<snapshotRepository>
-			<id>nexus-snapshot</id>
-			<name>corp nexus-snapshot</name>
-			<url>http://你的nexusIP:8081/nexus/content/repositories/snapshots/</url>
+			<id>rdc-snapshots</id>
+			<url>https://repo.rdc.aliyun.com/repository/111233-snapshot-U8MRmU/</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
