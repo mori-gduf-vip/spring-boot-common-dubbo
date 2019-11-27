@@ -8,6 +8,8 @@ class CommonDubboApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
+
 
 }

@@ -52,4 +52,11 @@
       <appender-ref ref="Async" />
       <appender-ref ref="ErrorFile" />
    </root>
+
+<!--    <logger name="com.mori.dubbo.*" level="DEBUG">-->
+<!--        <appender-ref ref="Console" />-->
+
+<!--    </logger>-->
+
+
 </configuration>
